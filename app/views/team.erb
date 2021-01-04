@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= @team.name %>s Assemble! </title>
+    </head>
+    <body>
+        <h1><%= @team.name %></h1>
+        <h2>Team Motto: <%= @team.motto %></h2><br>
+        <% @members.each do |member| %>
+            <h2>Hero Name: <%= member.name %></h2><br>
+            <p>Hero Power: <%= member.power %></p>
+            <p>Hero Biography: <%= member.bio %></p><br><br>
+        <% end %>
+    </body>
+</html>
+
 
 
 
